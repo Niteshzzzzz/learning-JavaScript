@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function creature(year){
+            this.lifeSpan = 100;
+        }
+        creature.prototype.breath = function(){console.log("Breathing...")};
+        
+        // let creature1 = new creature(100);
+        // console.log(creature1);
+
+        function Person(first, last, a){
+            this.firstName = first;
+            this.lastName = last;
+            this.age = a;
+        }
+        Person.prototype.__proto__ = Object.create(creature.prototype);
+        Person.prototype.fullName = function(){console.log(this.firstName+" "+this.lastName)} 
+        let Person1 = new Person("Nitesh", 'Kumar', 20);
+        console.log(Person1);
+        Person1.fullName();
+        Person1.breath();
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript</h1>
+    <script>
+        // arrow function without arguments
+        function sayHi(){
+            console.log("Hi...");
+        }
+        sayHi();
+
+        let sayHiA = () => console.log("Hi...");
+        sayHiA();
+
+        // arrow function with single argument
+        function double(a) {
+            return a*2;
+        }
+        console.log(double(9));
+
+        let doubleA = a => a*2;
+        console.log(double(9));
+
+        // arrow function with more than two arguments
+        function sum(a, b) {
+            return a+b;
+        }
+        console.log(sum(9, 4));
+
+        let sumA = (a, b) => a+b;
+        console.log(sumA(9, 4));
+
+        // arrow fuction with more than two lines
+        function name(){
+            console.log("Nitesh Kumar");
+            console.log(21);
+        }
+        name();
+
+        let nameA = () => {
+            console.log("Nitesh Kumar");
+            console.log(21);
+        }
+        nameA();
+    </script>
+</body>
+</html>

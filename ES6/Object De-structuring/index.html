@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript</h1>
+    <script>
+        let detail = {
+            name : "Nitesh Kumar",
+            age : 20,
+            roll_no : 807,
+            address : {
+                village : "Done",
+                year : 2024
+            }
+        };
+        let{name: title, age, roll_no, gender="Male", address:{village, year}} = detail;
+        console.log(title);
+        console.log(age);
+        console.log(roll_no);
+        console.log(village);
+        console.log(year);
+        console.log(gender);
+    </script>
+</body>
+</html>

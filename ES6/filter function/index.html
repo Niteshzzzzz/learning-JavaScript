@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript</h1>
+    <script>
+        let arr1 = [1,2,3,4,5,6];
+        let arr2 = arr1.filter(v => v%2==0);
+        console.log(arr2);
+
+        let arr = [
+            {name: "Nitesh Kumar", age: 21},
+            {name: "Durgesh Kumar", age: 20},
+            {name: "Saryam Kumar", age: 7},
+            {name: "Rahul Kumar", age: 12},
+            {name: "Ankit Kumar", age: 37},
+            {name: "Sagar Kuamr", age: 19}
+        ];
+        let arr3 = arr.filter(value => value.age>=20);
+        console.log(arr3);
+
+        let arr4 = [];
+        let j = 0;
+        for(let i=0; i<arr.length; i++){
+            if(arr[i].age<20){
+                arr4[j++]=arr[i];
+            }
+        }
+        console.log(arr4);
+    </script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+    "name": "Nitesh Kumar",
+    "age": 21,
+    "is_Student": true,
+    "isPassport": null,
+    "languages": ["C", "C++", "JAVA", "PYTHON", "JAVASCRIPT", "CSS", "HTML"],
+    "address":{
+        "Village": "done",
+        "city": "siwan",
+        "pincode": 841235
+    }
+}

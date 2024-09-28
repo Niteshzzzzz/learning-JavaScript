@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript</h1>
+    <script>
+        let usefullMethod1 = {
+            sayHi(){console.log("Hi...")},
+            sayBye(){console.log("Bye...")}
+        }
+        let usefullMethod2 = {
+            sayHello(){console.log("Hello...")}
+        }
+        class person {
+            name = "Nitesh Kumar";
+        }
+
+        Object.assign(person.prototype, usefullMethod1);
+        Object.assign(person.prototype, usefullMethod2);
+
+        let person1 = new person();
+        console.log(person1.name);
+        person1.sayBye();
+        person1.sayHi();        
+        person1.sayHello();
+
+    </script>
+</body>
+</html>

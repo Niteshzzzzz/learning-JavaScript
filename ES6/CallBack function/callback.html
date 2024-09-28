@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript</h1>
+    <p id="demo1"></p>
+    <script>
+        let sayHi = () => {
+            console.log("Hi...")
+            return "Hi..."
+        };
+        function person(name, callback){
+            callback();
+            console.log(name);
+            return name;
+        }
+        person("Nitesh Kumar", sayHi);
+        
+        const myNumber = [1,-7,44,-88,0,32,-22,324,4345];
+        const posNumber = removeNeg(myNumber, (x) => x>=0);
+        document.getElementById("demo1").innerHTML = posNumber;
+
+        function removeNeg(number, callback){
+            let myArray = [];
+            for(let x of number){
+                if(callback(x)){
+                    myArray.push(x);
+                }
+            }
+            return myArray;
+        }
+    </script>
+</body>
+</html>

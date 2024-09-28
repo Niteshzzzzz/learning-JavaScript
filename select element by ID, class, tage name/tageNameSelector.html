@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li class="cl">List 1</li>
+        <li id="first">List 2</li>
+        <li class="cl">List 3</li>
+    </ul>
+    <h1>heading 1</h1>
+    <p>Paragraph 1</p>
+    <h1>heading 2</h1>
+    <p>Paragraph 2</p>    
+    <h1>heading 3</h1>
+    <p>Paragraph 3</p>
+    <script>
+        let elm = document.getElementsByTagName("h1");
+        for (let index = 0; index < elm.length; index++) {
+            elm[index].innerHTML = "NITESH";
+            console.log(elm[index].innerHTML)
+        }
+    </script>
+</body>
+</html>

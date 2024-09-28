@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let time1 = setTimeout(fun, 5000);
+        function fun(){
+             alert("please subscribe....");
+         }
+
+        let time2 = setTimeout(fun1, 2000);
+        function fun1(){
+            console.log("please subscribe....");
+        }
+
+        clearInterval(time2);
+
+    </script>
+</body>
+</html>

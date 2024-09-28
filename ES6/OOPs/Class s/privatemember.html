@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript</h1>
+    <p id="demo"></p>
+    <script>
+        class car{
+            #year;
+            constructor(name, year){
+                this.name = name;
+                this.#year = year;
+                this.year1 = year
+            }
+            age(){
+                let date = new Date();
+                return date.getFullYear()-this.#year;
+            }
+        }
+        let MyCar = new car("Jaguar", 2000);
+        document.getElementById("demo").innerHTML = "Car name is "+MyCar.name+", and year of release is "+MyCar.year1+". It is "+MyCar.age()+" year old."
+        console.log(MyCar.age());
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="cl">heading 1</h1>
+    <p class="cl">Paragraph 1</p>
+    <h1 class="cl">heading 2</h1>
+    <p>Paragraph 2</p>    
+    <h1>heading 3</h1>
+    <p class="cl">Paragraph 3</p>
+    <script>
+        let elm = document.querySelectorAll("p.cl");
+        for(let i=0;i<elm.length;i++){
+            elm[i].innerHTML = "Hello";
+        }
+    </script>
+</body>
+</html>

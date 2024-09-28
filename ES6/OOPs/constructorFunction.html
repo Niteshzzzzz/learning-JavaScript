@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Person(first, last, a){
+            this.firstName = first;
+            this.lastName = last;
+            this.age = a;
+            this.fullName = function(){console.log(this.firstName+" "+this.lastName)}
+        }
+       
+        let Person1 = new Person("Nitesh", 'Kumar', 20);
+        console.log(Person1);
+
+        let Person2 = new Person("Durgesh", 'Kumar', 21);
+        console.log(Person2);
+        console.log(Person1.hasOwnProperty("firstName"));
+        console.log(Person2.hasOwnProperty("fullName"));
+
+
+    </script>
+</body>
+</html>

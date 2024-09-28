@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="intro" >
+        <p id="hello">This is a paragraph tag.</p>
+    </div>
+    <ul id="list">
+        <li>list 1</li>
+        <li>list 2</li>
+        <li>list 3</li>
+        <li>list 4</li>
+    </ul>
+    <script>
+        let elm = document.getElementById("intro");
+        let h = document.createElement("h1");
+        let text = document.createTextNode("This is a heading tag.");
+        h.appendChild(text);
+        elm.appendChild(h);
+
+        // give id and class to h tage through javascript
+        h.className = "Hii pi";
+        h.id = "intro2";
+
+        h.textContent = "I am Nitesh kumar";
+        let elem = document.getElementById("hello");
+        console.log(elem.textContent)
+
+        let elm2 = document.getElementById("list");
+        let item = document.createElement("li");
+        item.textContent = "new list 5";
+        elm2.appendChild(item);
+    </script>
+</body>
+</html>

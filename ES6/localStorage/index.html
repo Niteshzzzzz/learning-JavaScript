@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript</h1>
+    <input type="text" id="inputfile">
+    <h2 class="h">My name is <span></span></h2>
+
+    <input type="number" id="inputfile1">
+    <h2 class="h1">My age is <span></span></h2>
+
+    <script>
+        localStorage.setItem('myName', 'Nitesh Kumar');
+        console.log(localStorage.getItem('myName'));
+
+        let input = document.getElementById('inputfile');
+        let h = document.querySelector('.h');
+
+        let inputage = document.getElementById('inputfile1');
+        let h1 = document.querySelector('.h1');
+
+       h.firstElementChild.innerText = "_ _ _ _ _ _ _";
+       h1.firstElementChild.innerText = "_ _ _ _ _";
+
+
+        input.addEventListener('input', (e) => {
+           localStorage.setItem('Name', e.target.value);
+            h.firstElementChild.innerText = localStorage.getItem('Name');
+        })
+
+        inputage.addEventListener('input', (e) => {
+           localStorage.setItem('age', e.target.value);
+            h1.firstElementChild.innerText = localStorage.getItem('age');
+        })
+    </script>
+</body>
+</html>

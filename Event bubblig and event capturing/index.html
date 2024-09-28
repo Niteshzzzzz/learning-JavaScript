@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: rgb(147, 99, 27);
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+            box-shadow: 10px 10px 3px rgb(65, 22, 22);
+        }
+        body{
+            background-color: aqua;
+            padding: 150px;
+        }
+        button{
+            background-color: rgb(110, 110, 221);
+            font-size: 20px;
+            padding: 10px;
+            border: 4px solid rgb(239, 5, 5);
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="div">
+        <button id="btn">Click Here</button>
+    </div>
+    <script>
+        let div = document.getElementById("div");
+        div.addEventListener('click', function(){
+            console.log("div was clicked....");
+        }, true)
+
+        let btn = document.getElementById("btn");
+        btn.addEventListener('click',btnf, true) 
+        function btnf(){
+            console.log("Button was clicked....");
+
+        }
+
+        document.body.addEventListener('click', function(){
+            console.log("body was clicked....");
+        }, true)
+
+</script>
+</body>
+</html>

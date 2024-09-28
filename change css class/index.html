@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .color{
+            color: red;
+            border: 3px solid red;
+        }
+        .color2{
+            background-color: aqua;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="intro" class="color ">This is a heading tag</h1>
+    <script>
+        let box = document.getElementById("intro");
+        console.log(box.classList);
+        box.classList.add("color2");
+        //box.classList.toggle("color2")
+
+        // get hight and width
+        console.log(box.offsetHeight);
+        console.log(box.offsetWidth);
+
+        console.log(box.clientHeight);
+        console.log(box.clientWidth);
+
+    </script>
+</body>
+</html>

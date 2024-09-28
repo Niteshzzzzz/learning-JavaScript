@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript</h1>
+    <p id="demo"></p>
+    <script>
+        class car{
+            constructor(name, year){
+                this.name = name;
+                this.year = year;
+            }
+            age(){
+                let date = new Date();
+                return date.getFullYear()-this.year;
+            }
+            static sayHi(){console.log("Hi...")}
+        }
+        let MyCar = new car("RANGE-ROVER", 2000);
+        console.log(MyCar);
+        console.log(MyCar.age());
+        console.log(car.sayHi());
+
+
+</script>
+</body>
+</html>

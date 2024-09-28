@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="sub">Submit</button><hr>
+    <button id="sub1">Submit</button>    
+    <script>
+        let elm = document.getElementById("sub");
+        elm.style.cssText = "color: blue; background-color: red;";
+        let elm1 = document.getElementById("sub1");
+        elm1.setAttribute("style","color: blue; background-color: red;");
+        elm1.style.border = "20px black solid";
+
+        elm.style.cssText += "font-size: 20px; font-family: arial;";
+
+        //get computed css
+        let x = getComputedStyle(elm);
+        console.log(x.color)
+    </script>
+</body>
+</html>

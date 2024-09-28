@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="sub">Submit</button>
+    <script>
+        let elm = document.getElementById("sub");
+        elm.setAttribute("class", "cl");
+        console.log(elm.getAttribute("id"))
+        console.log(elm.hasAttribute("class"))
+        elm.removeAttribute("class")
+    </script>
+</body>
+</html>

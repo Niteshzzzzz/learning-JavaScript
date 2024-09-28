@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="text-align: center;"><button style="height: 40px;">click here to get/other dog image</button></div>
+    <p style="text-align: center;"><img src="https://images.dog.ceo/breeds/mix/charlie.jpg" style="width: 500px; height: auto;"></p>
+    <script>
+        let image = document.querySelector('img');
+        let button = document.querySelector('button');
+        button.addEventListener('click', () => {
+        
+            var xhr = new XMLHttpRequest();
+            // console.log(xhr);
+
+            xhr.addEventListener('load', () => {
+                image.src = JSON.parse(xhr.response).message
+            })
+            xhr.open('GET', 'https://dog.ceo/api/breeds/image/random');
+            xhr.send();
+            
+        })
+    </script>
+</body>
+</html>

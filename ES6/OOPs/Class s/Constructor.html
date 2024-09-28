@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript</h1>
+    <p id="demo"></p>
+    <script>
+        class person {
+            constructor(name, year) {
+                this.name = name;
+                this.bithYear = year;
+            }
+            sayHi(){
+                console.log("Hi...")
+            }
+        }
+
+        class personAge extends person {
+            constructor(n, a){
+                super(n,a);
+            }
+            age(){
+                let date = new Date();
+                return date.getFullYear() - this.bithYear;
+            }
+            sayHi(){
+                super.sayHi();
+                console.log("Nitesh...")
+            }
+        }
+        
+        let person1 = new personAge("Nitesh", 2003);
+        console.log(person1.age())
+        person1.sayHi()
+
+
+        document.getElementById("demo").innerHTML = "My name is "+person1.name+` and I am ${person1.age()} years old`;
+
+    </script>
+</body>
+</html>
